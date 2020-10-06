@@ -12,5 +12,40 @@
     &--primary
         color: $darkGrey
 .phone
+    transition: .4s
     &--primary
         color: $darkGrey
+        &:hover
+            color: $red
+    &-icon
+        width: 4rem
+        height: 4rem
+        +flex-content-center
+        border-radius: 50%
+        background-color: rgba($red, 1)
+        position: relative
+    &-pulse
+        &__circle
+            background: $red
+            border-radius: 50%
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            z-index: 3
+            animation: circle 4s;
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+            &:nth-child(1),
+            &:nth-child(2)
+                animation-delay: 1s
+            &:nth-child(3)
+                animation-delay: 3s
+@keyframes circle
+    0%
+        opacity: .4
+        transform: scale(1)
+    100%
+        opacity: 0
+        transform: scale(2)

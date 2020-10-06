@@ -15,28 +15,30 @@
     <header class="header header--primary">
         <div class="container">
             <div class="menu menu__content">
-                <a href="index.html" class="custom-logo-link">
-                    <img width="103" height="48.62" src="./img/logo.svg" alt="custom-logo">
-                </a>
-                <nav class="nav menu__nav">
-                    <ul class="nav-list">
-                        <li class="nav-list__item">
-                            <a href="#products" class="nav-list__link">Продукция</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#stages_of_work" class="nav-list__link">Этапы работы</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#installment" class="nav-list__link">Рассрочка</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#reviews" class="nav-list__link">Отзывы</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#contacts" class="nav-list__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="menu__side">
+                    <a href="index.html" class="custom-logo-link">
+                        <img width="103" height="48.62" src="./img/logo.svg" alt="custom-logo">
+                    </a>
+                    <nav class="nav menu__nav">
+                        <ul class="nav-list">
+                            <li class="nav-list__item">
+                                <a href="#products" class="nav-list__link">Продукция</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#stages_of_work" class="nav-list__link">Этапы работы</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#installment" class="nav-list__link">Рассрочка</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#reviews" class="nav-list__link">Отзывы</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#contacts" class="nav-list__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="contacts menu__contacts">
                     <div class="address contacts__address">
                         <svg width="27" height="41" viewBox="0 0 27 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,9 +49,14 @@
                     </div>
                     <a href="tel:+79002727244" class="phone contacts__phone phone--primary">+7 (900) 272-72-44</a>
                     <button class="call contacts__call call--primary">
-                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.76754 0.479241C1.93154 0.315222 2.12854 0.18795 2.34548 0.105868C2.56241 0.0237859 2.79432 -0.0112294 3.02582 0.00314473C3.25732 0.0175188 3.48311 0.0809538 3.68823 0.189241C3.89334 0.297529 4.07309 0.448194 4.21554 0.631241L5.89654 2.79324C6.20554 3.18924 6.31454 3.70624 6.19254 4.19324L5.67954 6.24624C5.65286 6.35277 5.65422 6.46439 5.68349 6.57024C5.71275 6.67608 5.76893 6.77255 5.84654 6.85024L8.15054 9.15324C8.22823 9.23085 8.3247 9.28703 8.43054 9.31629C8.53639 9.34556 8.64801 9.34692 8.75454 9.32024L10.8065 8.80724C11.0472 8.74713 11.2984 8.74254 11.5411 8.79382C11.7839 8.8451 12.0117 8.95091 12.2075 9.10324L14.3695 10.7842C15.1465 11.3882 15.2185 12.5372 14.5225 13.2322L13.5525 14.2022C12.8595 14.8952 11.8225 15.2002 10.8555 14.8602C8.38195 13.9896 6.13609 12.5732 4.28454 10.7162C2.42718 8.86479 1.01049 6.61893 0.139539 4.14524C-0.200461 3.17824 0.104539 2.14124 0.797539 1.44724L1.76754 0.478241V0.479241Z" fill="white"/>
-                            </svg>
+                        <span class="phone-icon call__phone-icon">
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.76754 0.479241C1.93154 0.315222 2.12854 0.18795 2.34548 0.105868C2.56241 0.0237859 2.79432 -0.0112294 3.02582 0.00314473C3.25732 0.0175188 3.48311 0.0809538 3.68823 0.189241C3.89334 0.297529 4.07309 0.448194 4.21554 0.631241L5.89654 2.79324C6.20554 3.18924 6.31454 3.70624 6.19254 4.19324L5.67954 6.24624C5.65286 6.35277 5.65422 6.46439 5.68349 6.57024C5.71275 6.67608 5.76893 6.77255 5.84654 6.85024L8.15054 9.15324C8.22823 9.23085 8.3247 9.28703 8.43054 9.31629C8.53639 9.34556 8.64801 9.34692 8.75454 9.32024L10.8065 8.80724C11.0472 8.74713 11.2984 8.74254 11.5411 8.79382C11.7839 8.8451 12.0117 8.95091 12.2075 9.10324L14.3695 10.7842C15.1465 11.3882 15.2185 12.5372 14.5225 13.2322L13.5525 14.2022C12.8595 14.8952 11.8225 15.2002 10.8555 14.8602C8.38195 13.9896 6.13609 12.5732 4.28454 10.7162C2.42718 8.86479 1.01049 6.61893 0.139539 4.14524C-0.200461 3.17824 0.104539 2.14124 0.797539 1.44724L1.76754 0.478241V0.479241Z" fill="white">
+                                </svg>
+                        </span>
+                        <span class="phone-pulse phone-pulse__circle"></span>
+                        <span class="phone-pulse phone-pulse__circle"></span>
+                        <span class="phone-pulse phone-pulse__circle"></span>
                     </button>
                 </div>
             </div>
