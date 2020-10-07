@@ -9,9 +9,15 @@
     &::placeholder  
         opacity: 1
 .location
+    font-size: 1.125rem
+    line-height: 1.625rem
+    display: inline-block
     &--primary
         color: $darkGrey
 .phone
+    font-size: 1.45rem
+    line-height: 2.25rem
+    font-weight: bold
     transition: .4s
     &--primary
         color: $darkGrey
@@ -24,6 +30,7 @@
         border-radius: 50%
         background-color: rgba($red, 1)
         position: relative
+        z-index: 5
     &-pulse
         &__circle
             background: $red
@@ -49,3 +56,57 @@
     100%
         opacity: 0
         transform: scale(2)
+.title
+    font-family: 'Oswald', sans-serif
+    font-weight: 600
+    font-size: 3.75rem
+    line-height: 4.375rem
+    color: $darkGrey
+    margin: 0
+    &--primary
+        color: $red
+main
+    padding-top: 128px
+.subtitle
+    font-weight: bold
+    font-size: 1.5rem
+    line-height: 2.25rem
+    color: $darkGrey
+    margin: 0
+.button
+    font-weight: normal
+    font-size: 1.5rem
+    line-height: 2.25rem
+    color: $white
+    border: 1px solid $red
+    padding: 1rem 2.3rem
+    transition: .4s
+    position: relative
+    &:hover
+        color: $red
+        &::before
+            height: 0
+        &::after
+            width: 0
+    &--primary
+        background-color: $red
+        &:hover
+            background-color: $white
+    &::before,
+    &::after
+        content: ''
+        position: absolute
+        background-color: $red
+        transition: .4s
+    &::before
+        top: 0.45rem
+        right: -0.5rem
+        width: 1px
+        height: 74px
+        transition: all 0.4s linear
+    &::after
+        right: -1rem
+        bottom: -0.4rem
+        width: 253px
+        height: 1px
+        transition: all 0.4s linear

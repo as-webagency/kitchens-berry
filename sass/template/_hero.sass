@@ -1,0 +1,71 @@
+.hero
+    padding: 3rem 0 8rem
+    &-side
+        +flex-wrap
+        justify-content: space-between
+        &__wrap
+            max-width: 37.5rem
+        &__text
+            max-width: 30rem
+            margin-left: auto
+            margin-right: 1.3rem
+        &__over
+            font-size: 1.125rem
+            line-height: 1.70rem
+            color: $darkGrey
+            letter-spacing: 0.5px
+        &__title
+            margin: 0.2rem 0 2.2rem
+        &__subtitle
+            margin: 0 0 1.2rem
+            letter-spacing: 0.3px
+        &__under
+            color: $red
+            font-size: 1.125rem
+            line-height: 1.70rem
+            letter-spacing: 0.7px
+        &__button
+            max-width: 249px
+            margin: 4rem 0 5.5rem 0.2rem
+        &__left
+            margin-top: -8px
+            .gallery-thumbs
+                .swiper
+                    &-wrapper
+                        +flex
+                    &-slide
+                        width: 180px !important
+                        height: 182px !important
+                        margin-right: 26px !important
+                        img
+                            height: 100%
+                            width: 100%
+                            object-fit: cover
+        &__center
+            margin-right: -3rem
+            .gallery-top
+                max-width: 54.56rem
+                min-height: 42.68rem
+                .swiper
+                    &-slide
+                        width: 100% !important
+        &__right
+            position: relative
+        &__social
+            position: absolute
+            top: 3.1rem
+            right: -4.7rem
+            list-style: none
+            transform: rotate(90deg)
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column
+            height: 20px
+.social
+    &__item
+        margin-right: 24px
+    &__link
+        color: $darkGrey
+        font-size: 1.125rem
+        line-height: 1.70rem
+        display: block
