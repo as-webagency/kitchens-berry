@@ -30,5 +30,25 @@ var galleryTop = new Swiper('.gallery-top', {
     },
     thumbs: {
         swiper: galleryThumbs
-    }
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+});
+
+$(document).ready(function(){
+
+    // Menu scroll by id
+    $('.menu__nav a').click(function(){
+        var el = $(this).attr('href');
+        $('html,body').animate({
+            scrollTop: $(el).offset().top - $("header").height()}, 1500);
+        return false;
+    });
+
+
 });
