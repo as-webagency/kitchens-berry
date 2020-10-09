@@ -79,13 +79,13 @@
                                 <div class="swiper-container gallery-thumbs">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="./img/hero/alaska.jpg" alt="alaska">
+                                            <img src="./img/hero/alaska.jpg" data-src="./img/hero/alaska.jpg" alt="alaska">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/hero/soprano.jpg" alt="soprano">
+                                            <img src="/img/hero/soprano.jpg" data-src="./img/hero/soprano.jpg" alt="soprano">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./img/hero/alaska.jpg" alt="alaska">
+                                            <img src="./img/hero/alaska.jpg" data-src="./img/hero/alaska.jpg" data-src="./img/hero/alaska.jpg" alt="alaska">
                                         </div>
                                     </div>
                                 </div>
@@ -96,21 +96,21 @@
                         <div class="swiper-container gallery-top">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./img/hero/alaska.jpg" alt="alaska">
+                                    <img src="./img/hero/alaska.jpg" data-src="./img/hero/alaska.jpg" alt="alaska">
                                     <div class="swiper-slide__block">
                                         <div class="swiper-slide__count">01</div>
                                         <div class="swiper-slide__name"> Кухня Аляска</div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./img/hero/soprano.jpg" alt="soprano">
+                                    <img src="./img/hero/soprano.jpg" data-src="./img/hero/soprano.jpg" alt="soprano">
                                     <div class="swiper-slide__block">
                                         <div class="swiper-slide__count">02</div>
                                         <div class="swiper-slide__name"> Кухня Сопрано</div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./img/hero/alaska.jpg" alt="alaska">
+                                    <img src="./img/hero/alaska.jpg" data-src="./img/hero/alaska.jpg" alt="alaska">
                                     <div class="swiper-slide__block">
                                         <div class="swiper-slide__count">03</div>
                                         <div class="swiper-slide__name"> Кухня Аляска</div>
@@ -145,32 +145,427 @@
         </section>
         <section class="products" id="products">
             <div class="container">
-                <h2 class="title ">Наши кухни</h2>
+                <h2 class="title products__title">Наши кухни</h2>
+                <div class="tabs">
+                    <div class="tabs-triggers tabs-triggers__list">
+                        <a href="#tab-1" class="tabs-triggers__item">Модерн</a>
+                        <a href="#tab-2" class="tabs-triggers__item">Классика</a>
+                        <a href="#tab-3" class="tabs-triggers__item">Лофт</a>
+                        <a href="#tab-4" class="tabs-triggers__item">Прованс</a>
+                    </div>
+                    <div class="tabs-content">
+                        <div id="tab-1" class="tabs-content__item">
+                            <div class="tabs-content-start swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/guard.jpg" data-src="./img/products/guard.jpg" alt="guard">
+                                            </div>
+                                            <h3 class="card__title">Кухня Гарда</h3>
+                                            <p class="card__text">Швейцарский вяз/Ваниль</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/alaska.jpg" data-src="./img/products/alaska.jpg" alt="alaska">
+                                            </div>
+                                            <h3 class="card__title">Кухня Аляска</h3>
+                                            <p class="card__text">Серый Лед</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/fiji.jpg" data-src="./img/products/fiji.jpg" alt="fiji">
+                                            </div>
+                                            <h3 class="card__title">Кухня Фиджи</h3>
+                                            <p class="card__text">Доломит/Кварц</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/avenza.jpg" data-src="./img/products/avenza.jpg" alt="avenza">
+                                            </div>
+                                            <h3 class="card__title">Кухня Авенза</h3>
+                                            <p class="card__text">Россо</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/guard.jpg" alt="guard">
+                                            </div>
+                                            <h3 class="card__title">Кухня Гарда</h3>
+                                            <p class="card__text">Швейцарский вяз/Ваниль</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/alaska.jpg" alt="alaska">
+                                            </div>
+                                            <h3 class="card__title">Кухня Аляска</h3>
+                                            <p class="card__text">Серый Лед</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/fiji.jpg" alt="fiji">
+                                            </div>
+                                            <h3 class="card__title">Кухня Фиджи</h3>
+                                            <p class="card__text">Доломит/Кварц</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/avenza.jpg" alt="avenza">
+                                            </div>
+                                            <h3 class="card__title">Кухня Авенза</h3>
+                                            <p class="card__text">Россо</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div id="tab-2" class="tabs-content__item">
+                            <div class="tabs-content-start swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/alaska.jpg" alt="alaska">
+                                            </div>
+                                            <h3 class="card__title">Кухня Аляска</h3>
+                                            <p class="card__text">Серый Лед</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/guard.jpg" alt="guard">
+                                            </div>
+                                            <h3 class="card__title">Кухня Гарда</h3>
+                                            <p class="card__text">Швейцарский вяз/Ваниль</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/fiji.jpg" alt="fiji">
+                                            </div>
+                                            <h3 class="card__title">Кухня Фиджи</h3>
+                                            <p class="card__text">Доломит/Кварц</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/avenza.jpg" alt="avenza">
+                                            </div>
+                                            <h3 class="card__title">Кухня Авенза</h3>
+                                            <p class="card__text">Россо</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/guard.jpg" alt="guard">
+                                            </div>
+                                            <h3 class="card__title">Кухня Гарда</h3>
+                                            <p class="card__text">Швейцарский вяз/Ваниль</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/alaska.jpg" alt="alaska">
+                                            </div>
+                                            <h3 class="card__title">Кухня Аляска</h3>
+                                            <p class="card__text">Серый Лед</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/fiji.jpg" alt="fiji">
+                                            </div>
+                                            <h3 class="card__title">Кухня Фиджи</h3>
+                                            <p class="card__text">Доломит/Кварц</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/avenza.jpg" alt="avenza">
+                                            </div>
+                                            <h3 class="card__title">Кухня Авенза</h3>
+                                            <p class="card__text">Россо</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div id="tab-3" class="tabs-content__item">
+                            <div class="tabs-content-start swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/fiji.jpg" alt="fiji">
+                                            </div>
+                                            <h3 class="card__title">Кухня Фиджи</h3>
+                                            <p class="card__text">Доломит/Кварц</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/guard.jpg" alt="guard">
+                                            </div>
+                                            <h3 class="card__title">Кухня Гарда</h3>
+                                            <p class="card__text">Швейцарский вяз/Ваниль</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/alaska.jpg" alt="alaska">
+                                            </div>
+                                            <h3 class="card__title">Кухня Аляска</h3>
+                                            <p class="card__text">Серый Лед</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/avenza.jpg" alt="avenza">
+                                            </div>
+                                            <h3 class="card__title">Кухня Авенза</h3>
+                                            <p class="card__text">Россо</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/guard.jpg" alt="guard">
+                                            </div>
+                                            <h3 class="card__title">Кухня Гарда</h3>
+                                            <p class="card__text">Швейцарский вяз/Ваниль</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/alaska.jpg" alt="alaska">
+                                            </div>
+                                            <h3 class="card__title">Кухня Аляска</h3>
+                                            <p class="card__text">Серый Лед</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/fiji.jpg" alt="fiji">
+                                            </div>
+                                            <h3 class="card__title">Кухня Фиджи</h3>
+                                            <p class="card__text">Доломит/Кварц</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/avenza.jpg" alt="avenza">
+                                            </div>
+                                            <h3 class="card__title">Кухня Авенза</h3>
+                                            <p class="card__text">Россо</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div id="tab-4" class="tabs-content__item">
+                            <div class="tabs-content-start swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/avenza.jpg" alt="avenza">
+                                            </div>
+                                            <h3 class="card__title">Кухня Авенза</h3>
+                                            <p class="card__text">Россо</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/guard.jpg" alt="guard">
+                                            </div>
+                                            <h3 class="card__title">Кухня Гарда</h3>
+                                            <p class="card__text">Швейцарский вяз/Ваниль</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/alaska.jpg" alt="alaska">
+                                            </div>
+                                            <h3 class="card__title">Кухня Аляска</h3>
+                                            <p class="card__text">Серый Лед</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/fiji.jpg" alt="fiji">
+                                            </div>
+                                            <h3 class="card__title">Кухня Фиджи</h3>
+                                            <p class="card__text">Доломит/Кварц</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/guard.jpg" alt="guard">
+                                            </div>
+                                            <h3 class="card__title">Кухня Гарда</h3>
+                                            <p class="card__text">Швейцарский вяз/Ваниль</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/alaska.jpg" alt="alaska">
+                                            </div>
+                                            <h3 class="card__title">Кухня Аляска</h3>
+                                            <p class="card__text">Серый Лед</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/fiji.jpg" alt="fiji">
+                                            </div>
+                                            <h3 class="card__title">Кухня Фиджи</h3>
+                                            <p class="card__text">Доломит/Кварц</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card__size">
+                                            <div class="card__image">
+                                                <img src="./img/products/avenza.jpg" alt="avenza">
+                                            </div>
+                                            <h3 class="card__title">Кухня Авенза</h3>
+                                            <p class="card__text">Россо</p>
+                                            <strong class="card__price">от 45 000 Р</strong>
+                                            <button class="button card__button button--primary">Заказать  кухню</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </section>
         <section class="stages" id="stages_of_work">
             <div class="container">
-                <h2 class="title ">Этапы работы</h2>
+                <h2 class="title stages__title">Этапы работы</h2>
             </div>
         </section>
         <section class="gift">
             <div class="container">
-                <h2 class="title ">Получите подарок </h2>
+                <h2 class="title gift__title">Получите подарок </h2>
             </div>
         </section>
         <section class="installment" id="installment">
             <div class="container">
-                <h2 class="title ">Выгодные условия рассрочки и кредита</h2>
+                <h2 class="title installment__title">Выгодные условия рассрочки и кредита</h2>
             </div>
         </section>
         <section class="reviews" id="reviews">
             <div class="container">
-                <h2 class="title ">Отзывы довольных клиентов</h2>
+                <h2 class="title reviews__title">Отзывы довольных клиентов</h2>
             </div>
         </section>
         <section class="contactes" id="contactes">
             <div class="container">
-                <h2 class="title ">Контакты</h2>
+                <h2 class="title contactes__title">Контакты</h2>
             </div>
         </section>
     </main>
@@ -180,5 +575,16 @@
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+		function init() {
+			var imgDefer = document.getElementsByTagName('img');
+			for ( var i = 0; i < imgDefer.length; i++ ) {
+				if ( imgDefer[i].getAttribute( 'data-src' ) ) {
+					imgDefer[i].setAttribute( 'src',imgDefer[i].getAttribute( 'data-src') );
+				} 
+			} 
+		}
+		window.onload = init;
+	</script>
 </body>
 </html>
