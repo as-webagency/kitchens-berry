@@ -66,6 +66,20 @@ $(document).ready(function(){
         return false;
     });
 
+    // Change Height Scroll
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 400) {
+            $('.header').addClass('scroll');
+            $('.phone-icon').addClass('scroll-phone');
+            $('.contacts__call').addClass('scroll-call');
+        }
+        else {
+            $('.header').removeClass('scroll');
+            $('.phone-icon').removeClass('scroll-phone');
+            $('.contacts__call').removeClass('scroll-call');
+        }
+    });
+
     //Tabs
     $('.tabs-triggers__item').click(function(e) {
         e.preventDefault();

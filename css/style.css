@@ -682,6 +682,11 @@ button {
   z-index: 5;
 }
 
+.phone-icon.scroll-phone {
+  width: 3rem;
+  height: 3rem;
+}
+
 .phone-pulse__circle {
   background: #E41715;
   border-radius: 50%;
@@ -2519,6 +2524,10 @@ body.compensate-for-scrollbar {
   background-color: #ffffff;
 }
 
+.header.scroll {
+  padding: 1.5rem;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2601,6 +2610,10 @@ body.compensate-for-scrollbar {
   position: relative;
   top: -0.5rem;
   margin-left: auto;
+}
+
+.contacts__call.scroll-call {
+  top: 0;
 }
 
 .contacts__address {
@@ -2990,6 +3003,7 @@ body.compensate-for-scrollbar {
 
 .stages {
   position: relative;
+  padding: 2.8rem 0 0;
 }
 
 .stages::after {
@@ -3007,7 +3021,7 @@ body.compensate-for-scrollbar {
 }
 
 .stages__title {
-  margin: 2.8rem 0 0 -0.4rem;
+  margin: 0 0 0 -0.4rem;
 }
 
 .stages-side {
@@ -3111,5 +3125,80 @@ body.compensate-for-scrollbar {
   position: absolute;
   top: 8px;
   left: -18px;
+}
+
+.gift {
+  padding: 6rem 0;
+}
+
+.gift .container__relative {
+  z-index: 5;
+}
+
+.gift-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gift-side__title {
+  margin: 0rem 0rem 2.3rem 0rem;
+}
+
+.gift-side__text {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  max-width: 440px;
+}
+
+.gift-side__button {
+  max-width: 249px;
+  margin: 4.4rem 0 0 0.2rem;
+}
+
+.gift-side__right {
+  margin: 6.5rem 0rem 0rem 10rem;
+}
+
+.gift-side__image {
+  background: url("../img/gift/washing.png") no-repeat;
+  max-width: 439px;
+  width: 100%;
+  min-height: 394px;
+  background-position: 40px 100%;
+}
+
+.gift-box__relative {
+  position: relative;
+}
+
+.gift-box__line {
+  max-width: 31.75rem;
+  min-width: 31.75rem;
+  min-height: 33.187rem;
+  margin: 0.15rem 0 0 3.6rem;
+  border: 10px solid #E41715;
+}
+
+.gift-box__image {
+  position: absolute;
+  top: 3.2rem;
+  left: -0.1rem;
+  max-width: 39.37rem;
+  min-width: 39.37rem;
+  width: 100%;
+  height: 26.87rem;
+}
+
+.gift-box__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */

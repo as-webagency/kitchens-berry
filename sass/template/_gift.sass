@@ -1,0 +1,46 @@
+.gift
+    padding: 6rem 0
+    .container
+        &__relative
+            z-index: 5
+    &-side
+        +flex-wrap
+        justify-content: space-between
+        &__title
+            margin: 0rem 0rem 2.3rem 0rem
+        &__text
+            font-size: 1.5rem
+            line-height: 2.25rem
+            max-width: 440px
+        &__button
+            max-width: 249px
+            margin: 4.4rem 0 0 0.2rem
+        &__right
+            margin: 6.5rem 0rem 0rem 10rem
+        &__image
+            background: url('../img/gift/washing.png') no-repeat
+            max-width: 439px
+            width: 100%
+            min-height: 394px
+            background-position: 40px 100%
+    &-box
+        &__relative
+            position: relative
+        &__line
+            max-width: 31.75rem
+            min-width: 31.75rem
+            min-height: 33.187rem
+            margin: 0.15rem 0 0 3.6rem
+            border: 10px solid $red
+        &__image
+            position: absolute
+            top: 3.2rem
+            left: -0.1rem
+            max-width: 39.37rem
+            min-width: 39.37rem
+            width: 100%
+            height: 26.87rem
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
