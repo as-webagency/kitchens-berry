@@ -3201,4 +3201,124 @@ body.compensate-for-scrollbar {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.installment {
+  padding: 4rem 0;
+}
+
+.installment-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.installment-side__title {
+  max-width: 550px;
+  margin: 3.2rem 0rem 3.5rem 0;
+}
+
+.installment-side__question {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #13110C;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  max-width: 500px;
+  margin-bottom: 1.2rem;
+}
+
+.installment-side__text {
+  font-size: 1.2rem;
+  line-height: 1.625rem;
+  color: #13110C;
+  max-width: 500px;
+  letter-spacing: 0.1px;
+  margin-bottom: 3.3rem;
+}
+
+.installment-side__owner {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #E41715;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.installment-side__column-left {
+  margin-left: -0.3rem;
+  max-width: 556px;
+}
+
+.installment-side__column-right {
+  margin: 6.5rem 0 0 5rem;
+}
+
+.installment-side__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.installment-side__list {
+  list-style: none;
+  max-width: 290px;
+}
+
+.installment-side__item {
+  margin-bottom: 2.6rem;
+}
+
+.installment-side__item strong {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.8px;
+  color: #13110C;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.installment-side__item span {
+  font-size: 1.2rem;
+  line-height: 1.625rem;
+  color: #13110C;
+  letter-spacing: -0.2px;
+}
+
+.installment-side__right {
+  position: relative;
+}
+
+.installment-side__line {
+  max-width: 31.75rem;
+  min-width: 31.75rem;
+  min-height: 33.187rem;
+  margin: 0.1rem 2.7rem 0 0rem;
+  border: 10px solid #E41715;
+}
+
+.installment-side__image {
+  position: absolute;
+  top: 3.2rem;
+  right: -1.1rem;
+  max-width: 39.37rem;
+  min-width: 39.37rem;
+  width: 100%;
+  height: 26.87rem;
+}
+
+.installment-side__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */
