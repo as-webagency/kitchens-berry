@@ -3787,6 +3787,13 @@ body.compensate-for-scrollbar {
   display: inline-block;
   font-size: 1.2rem;
   line-height: 1.68rem;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.footer-column__social-link:hover {
+  color: #E41715;
 }
 
 .footer-column:nth-child(2) {
