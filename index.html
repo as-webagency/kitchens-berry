@@ -720,8 +720,35 @@
         </section>
         <section class="contactes" id="contactes">
             <div class="container">
-                <h2 class="title contactes__title">Контакты</h2>
+                <div class="contactes-side">
+                    <div class="contactes-side__left">
+                        <h2 class="title contactes-side__title">Контакты</h2>
+                        <strong class="contactes-side__offer">Давайте обсудим вашу новую кухню!</strong>
+                        <p class="contactes-side__text">Оставьте заявку, и наш менеджер свяжется с Вами</p>
+                        <div class="contactes-form contactes-form__size">
+                            <form action="#">
+                                <div class="contactes-form__field">
+                                    <input type="text" name="user_name" class="input contactes-form__input" placeholder="Ваше имя">
+                                </div>
+                                <div class="contactes-form__field">
+                                    <input type="text" name="user_phone" class="input contactes-form__input" placeholder="Ваш телефон">
+                                </div>
+                                <div class="contactes-form__field">
+                                    <input type="text" name="user_email" class="input contactes-form__input" placeholder="Ваш e-mail">
+                                </div>
+                                <button type="submit" class="button contactes-form__button button--primary">Отправить</button>
+                                <div class="policy contactes-form__policy">
+                                    <input type="checkbox" name="user_checkbox" id="policy-checkbox-form" class="policy__checkbox" checked>
+                                    <label for="policy-checkbox-form" class="policy__label">
+                                        <span>Даю согласие на обработку моих персональных данных в соответствии с <a href="#" class="policy__link">политикой конфиденциальности</a></span>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="contactes-map" id="map"></div>
         </section>
     </main>
     <footer class="footer">

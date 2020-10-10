@@ -623,18 +623,22 @@ button {
 
 .input::-webkit-input-placeholder {
   opacity: 1;
+  color: #898885;
 }
 
 .input:-ms-input-placeholder {
   opacity: 1;
+  color: #898885;
 }
 
 .input::-ms-input-placeholder {
   opacity: 1;
+  color: #898885;
 }
 
 .input::placeholder {
   opacity: 1;
+  color: #898885;
 }
 
 .location {
@@ -3425,5 +3429,108 @@ body.compensate-for-scrollbar {
 
 .contactes {
   padding: 3rem 0;
+  position: relative;
+}
+
+.contactes-side__title {
+  margin-left: -5px;
+  margin-bottom: 3.5rem;
+}
+
+.contactes-side__offer {
+  color: #E41715;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.8px;
+  display: inline-block;
+  margin-bottom: 1.2rem;
+}
+
+.contactes-side__text {
+  color: #13110C;
+  font-size: 1.2rem;
+  line-height: 1.625rem;
+  margin-bottom: 2rem;
+}
+
+.contactes-form__size {
+  max-width: 389px;
+}
+
+.contactes-form__field {
+  margin-bottom: 2rem;
+}
+
+.contactes-form__input {
+  color: #898885;
+  font-size: 1.2rem;
+  line-height: 1.625rem;
+  border-bottom: 1px solid #13110C;
+  padding-bottom: 6px;
+}
+
+.contactes-form__button {
+  width: 100%;
+  max-width: 385px;
+  margin: 2rem 0 0;
+}
+
+.contactes-form__button::after {
+  width: 100%;
+}
+
+.contactes-form__policy {
+  margin-top: 1rem;
+}
+
+#map {
+  max-width: 1155px;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  width: 100%;
+}
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.policy__checkbox:checked + .policy__label::before {
+  background: url("../img/checked.svg") center no-repeat;
+}
+
+.policy__label {
+  color: #898885;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.policy__label span {
+  max-width: 370px;
+  display: inline-block;
+  position: relative;
+  right: -18px;
+}
+
+.policy__label::before {
+  content: '';
+  width: 21px;
+  height: 21px;
+  border: 1px solid #898885;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: -3px;
+}
+
+.policy__link {
+  display: inline-block;
+  color: #898885;
+  border-bottom: 1px solid #898885;
 }
 /*# sourceMappingURL=style.css.map */

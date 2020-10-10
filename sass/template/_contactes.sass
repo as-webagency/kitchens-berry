@@ -1,2 +1,75 @@
 .contactes
     padding: 3rem 0
+    position: relative
+    &-side
+        &__title
+            margin-left: -5px
+            margin-bottom: 3.5rem
+        &__offer
+            color: $red
+            font-size: 1.5rem
+            line-height: 2.25rem
+            letter-spacing: 0.8px
+            display: inline-block
+            margin-bottom: 1.2rem
+        &__text
+            color: $darkGrey
+            font-size: 1.2rem
+            line-height: 1.625rem
+            margin-bottom: 2rem
+    &-form
+        &__size
+            max-width: 389px
+        &__field
+            margin-bottom: 2rem
+        &__input
+            color: $grey
+            font-size: 1.2rem
+            line-height: 1.625rem
+            border-bottom: 1px solid $darkGrey
+            padding-bottom: 6px
+        &__button
+            width: 100%
+            max-width: 385px
+            margin: 2rem 0 0
+            &::after
+                width: 100%
+        &__policy
+            margin-top: 1rem
+#map
+    max-width: 1155px  
+    position: absolute
+    top: 5rem
+    right: 0
+    width: 100%
+.policy
+    &__checkbox
+        opacity: 0
+        visibility: hidden 
+        &:checked + 
+            .policy
+                &__label
+                    &::before
+                        background: url('../img/checked.svg') center no-repeat
+    &__label  
+        color: $grey    
+        font-size: 0.875rem
+        line-height: 1.5rem 
+        +flex-wrap
+        span
+            max-width: 370px
+            display: inline-block
+            position: relative
+            right: -18px
+        &::before
+            content: ''
+            width: 21px
+            height: 21px
+            border: 1px solid $grey
+            cursor: pointer
+            margin-top: 5px
+            margin-left: -3px
+    &__link
+        display: inline-block
+        color: $grey
+        border-bottom: 1px solid $grey

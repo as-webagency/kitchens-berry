@@ -128,5 +128,15 @@ $(document).ready(function(){
         },
     });
 
+    var installment = $('.installment');
+    var installmentTop = installment.offset().top;
+    $(window).bind('scroll', function() {
+        var windowTop = $(this).scrollTop();
+        if (windowTop > installmentTop) {
+            $('#map').html('<script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A669517c226b3909c5555003165f80bb950c2f27ef83c7c70cc18ca8809cefdb9&amp;width=100%25&amp;height=589&amp;lang=ru_UA&amp;scroll=false"></script>');
+            $(window).unbind('scroll');
+        }
+    });
+
 });
 
