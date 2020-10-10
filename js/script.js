@@ -201,5 +201,14 @@ $(document).ready(function(){
     // Mask Phone
     $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "Ваш телефон"});
 
+    // Modals
+    $('.contacts__call, .hero-side__button, .gift-side__button').click(function(){
+        $('.overlay, .modal').fadeIn();
+    });
+
+    $('.overlay, .modal__close').click(function(){
+        $('.overlay, .modal').fadeOut();
+    });
+
 });
 

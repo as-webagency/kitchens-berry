@@ -791,15 +791,15 @@
                     </div>
                     <div class="footer-column__address">
                         <strong>Адрес: </strong>
-                        <p>г. Краснодар, 2-я Ямальская улица, 4А</p>
+                        <p> г. Краснодар, 2-я Ямальская улица, 4А</p>
                     </div>
                     <div class="footer-column__phone">
                         <strong>Телефон:</strong>
-                        <a href="tel:+79002727244">+7 (900) 272-72-44</a>
+                        <a href="tel:+79002727244"> +7 (900) 272-72-44</a>
                     </div>
                     <div class="footer-column__email">
                         <strong>Почта:</strong>
-                        <a href="mailto:kuhniberi@yandex.ru">kuhniberi@yandex.ru</a>
+                        <a href="mailto:kuhniberi@yandex.ru"> kuhniberi@yandex.ru</a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -822,6 +822,33 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay"></div>
+    <div class="modal">
+        <div class="modal__close"></div>
+        <div class="title modal__title">Хотите обсудить вашу кухню?</div>
+        <p>Оставьте контактные данные, наш менеджер свяжется с вами</p>
+        <div class="modal-form modal-form__size">
+            <form action="#" method="POST">
+                <div class="modal-form__field">
+                    <input type="text" name="user_name" class="input modal-form__input" placeholder="Ваше имя">
+                </div>
+                <div class="modal-form__field">
+                    <input type="tel" name="user_phone" class="input modal-form__input" placeholder="Ваш телефон">
+                </div>
+                <div class="modal-form__field">
+                    <input type="email" name="user_email" class="input modal-form__input" placeholder="Ваш e-mail">
+                </div>
+                <button type="submit" class="button modal-form__button button--primary">Отправить</button>
+                <div class="policy modal-form__policy">
+                    <input type="checkbox" name="user_checkbox" id="policy-checkbox-modal" class="policy__checkbox" checked>
+                    <label for="policy-checkbox-modal" class="policy__label">
+                        <span>Даю согласие на обработку моих персональных данных в соответствии с <a href="#" class="policy__link">политикой конфиденциальности</a></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="./js/script.js"></script>
