@@ -22,6 +22,7 @@
             max-width: 389px
         &__field
             margin-bottom: 2rem
+            position: relative
         &__input
             color: $grey
             font-size: 1.2rem
@@ -56,6 +57,7 @@
         font-size: 0.875rem
         line-height: 1.5rem 
         +flex-wrap
+        cursor: pointer
         span
             max-width: 370px
             display: inline-block
@@ -73,3 +75,13 @@
         display: inline-block
         color: $grey
         border-bottom: 1px solid $grey
+#user
+    &_email,
+    &_name,
+    &_phone
+        &-error
+            position: absolute
+            bottom: -20px
+            left: 0
+            color: $red    
+            font-size: 14px    
