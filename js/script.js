@@ -121,6 +121,12 @@ $(document).ready(function(){
 
     $('.tabs-triggers__item:first').click();
 
+    var reviewsSqwiper = new Swiper('.reviews-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 
 });
 
