@@ -8,7 +8,7 @@
     &--primary
         background-color: $white
     &.scroll
-        padding: 1.5rem
+        padding: 1.5rem 0
 .menu
     +flex-wrap
     justify-content: space-between
@@ -61,3 +61,21 @@
     &__name
         max-width: 11.25rem 
         margin-left: 1.10rem
+.burger
+    display: none
+    position: relative
+    top: 17px
+    left: 37px
+    &__line
+        position: absolute
+        left: 0
+        display: block
+        width: 30px
+        height: 2px
+        background-color: $red  
+        &:nth-child(1)
+            top: 0
+        &:nth-child(2)
+            top: 8px
+        &:nth-child(3)
+            top: 16px
