@@ -69,6 +69,24 @@ $(document).ready(function(){
         return false;
     });
 
+    $('.burger').click(function() {
+        $('.nav-list').fadeIn();
+        $('.close').fadeIn();
+        $('.custom-logo-link').addClass('pos');
+    }); 
+    
+    $('.menu__close').click(function() {
+        $('.nav-list').fadeOut();
+        $('.close').fadeOut();
+        $('.custom-logo-link').removeClass('pos');
+    });
+
+    $('.nav-list__link').click(function() {
+        $('.nav-list').fadeOut();
+        $('.close').fadeOut();
+        $('.custom-logo-link').removeClass('pos');
+    });
+
     // Change Height Scroll
     $(window).scroll(function(){
         if ($(window).scrollTop() > 400) {
@@ -126,7 +144,11 @@ $(document).ready(function(){
                 prevEl: '.tabs-button-prev',
             },
             breakpoints: {
-                640: {
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                600: {
                     slidesPerView: 2,
                     spaceBetween: 20,
                 },
@@ -191,7 +213,7 @@ $(document).ready(function(){
     });
 
     // Mask Phone
-    $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "Ваш телефон"});
+    $('[type=tel]').mask('+7(000) 00-00-000', { placeholder: "Ваш телефон" } );
 
     // Modals
     $('.contacts__call, .hero-side__button, .gift-side__button').click(function(){
