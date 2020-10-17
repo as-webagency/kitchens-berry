@@ -16,9 +16,15 @@
     transform: translate(-50%, -50%)
     max-width: 1056px
     width: 100%
-    padding: 5.7rem 0
+    height: 760px
+    max-height: 100%
     background-color: $white
     z-index: 60
+    &__content
+        padding: 5.7rem 0
+        overflow: auto
+        width: 100%
+        height: 100%
     &__close
         background: url('../img/close.svg') center no-repeat
         position: absolute
@@ -36,27 +42,27 @@
         margin: 0 auto 30px
         font-size: 1.5rem
         line-height: 2.25rem
-.modal-form
-    &__size
-        max-width: 458px
-        margin: 0 auto
-    &__field
-        position: relative
-        margin-bottom: 2rem
-    &__input
-        color: $grey
-        font-size: 1.2rem
-        line-height: 1.625rem
-        border-bottom: 1px solid $darkGrey
-        padding-bottom: 6px
-    &__button
-        width: 100%
-        max-width: 453px
-        margin: 2rem 0 0
-        &::after
+    &-form
+        &__size
+            max-width: 458px
+            margin: 0 auto
+        &__field
+            position: relative
+            margin-bottom: 2rem
+        &__input
+            color: $grey
+            font-size: 1.2rem
+            line-height: 1.625rem
+            border-bottom: 1px solid $darkGrey
+            padding-bottom: 6px
+        &__button
             width: 100%
-    &__policy
-        margin-top: 1rem
+            max-width: 453px
+            margin: 2rem 0 0
+            &::after
+                width: 100%
+        &__policy
+            margin-top: 1rem
 .modal-thanks
     display: none
     position: fixed
@@ -65,9 +71,15 @@
     transform: translate(-50%, -50%)
     max-width: 1056px
     width: 100%
-    padding: 5.7rem 0
     background-color: $white
     z-index: 60
+    height: 457px
+    max-height: 100%
+    &__content
+        padding: 5.7rem 0
+        overflow: auto
+        width: 100%
+        height: 100%
     &__close
         background: url('../img/close.svg') center no-repeat
         position: absolute
@@ -79,7 +91,7 @@
     &__title
         text-align: center
         margin: 0 0 26px
-    > p
+    &__text
         text-align: center
         margin: 0 0 68px
         font-size: 1.5rem

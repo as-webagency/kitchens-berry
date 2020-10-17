@@ -654,7 +654,7 @@
                                 </li>
                                 <li class="installment-side__item">
                                     <strong>Рассмотрение заявки</strong>
-                                    <span>Оформление документов в магазине за 20 мин</span>
+                                    <span>Оформление документов<br> в магазине за 20 мин</span>
                                 </li>
                                 <li class="installment-side__item">
                                     <strong>Срок рассрочки</strong>
@@ -831,50 +831,54 @@
 
     <div class="overlay"></div>
     <div class="modal">
-        <div class="modal__close"></div>
-        <div class="title modal__title">Хотите обсудить вашу кухню?</div>
-        <p>Оставьте контактные данные, наш менеджер свяжется с вами</p>
-        <div class="modal-form modal-form__size">
-            <form action="#" method="POST">
-                <div class="modal-form__field">
-                    <input type="text" name="user_name" class="input modal-form__input" placeholder="Ваше имя">
-                </div>
-                <div class="modal-form__field">
-                    <input type="tel" name="user_phone" class="input modal-form__input" placeholder="Ваш телефон">
-                </div>
-                <div class="modal-form__field">
-                    <input type="email" name="user_email" class="input modal-form__input" placeholder="Ваш e-mail">
-                </div>
-                <button type="submit" class="button modal-form__button button--primary">Отправить</button>
-                <div class="policy modal-form__policy">
-                    <input type="checkbox" name="user_checkbox" id="policy-checkbox-modal" class="policy__checkbox" checked>
-                    <label for="policy-checkbox-modal" class="policy__label">
-                        <span>Даю согласие на обработку моих персональных данных в соответствии с <a href="#" class="policy__link">политикой конфиденциальности</a></span>
-                    </label>
-                </div>
-            </form>
+        <div class="modal__content">
+            <div class="modal__close"></div>
+            <div class="title modal__title">Хотите обсудить вашу кухню?</div>
+            <p>Оставьте контактные данные, наш менеджер свяжется с вами</p>
+            <div class="modal-form modal-form__size">
+                <form action="#" method="POST">
+                    <div class="modal-form__field">
+                        <input type="text" name="user_name" class="input modal-form__input" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal-form__field">
+                        <input type="tel" name="user_phone" class="input modal-form__input" placeholder="Ваш телефон">
+                    </div>
+                    <div class="modal-form__field">
+                        <input type="email" name="user_email" class="input modal-form__input" placeholder="Ваш e-mail">
+                    </div>
+                    <button type="submit" class="button modal-form__button button--primary">Отправить</button>
+                    <div class="policy modal-form__policy">
+                        <input type="checkbox" name="user_checkbox" id="policy-checkbox-modal" class="policy__checkbox" checked>
+                        <label for="policy-checkbox-modal" class="policy__label">
+                            <span>Даю согласие на обработку моих персональных данных в соответствии с <a href="#" class="policy__link">политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <div class="modal-thanks">
-        <button class="modal-thanks__close"></button>
-        <div class="modal-thanks__title title">Спасибо!</div>
-        <p>Наши менеджеры свяжутся с вами.</p>
-        <div class="modal-thanks__social">
-            <p>Подписывайтесь на наши соцсети</p>
-            <ul class="modal-thanks__list">
-                <li class="modal-thanks__item">
-                    <a href="https://www.instagram.com/"  target="_blank"class="modal-thanks__link">Instagram</a>
-                </li>
-                <li class="modal-thanks__item">
-                    <a href="https://www.avito.ru/rossiya" target="_blank" class="modal-thanks__link">Avito</a>
-                </li>
-                <li class="modal-thanks__item">
-                    <a href="https://youla.ru/" target="_blank" class="modal-thanks__link">Youla</a>
-                </li>
-                <li class="modal-thanks__item">
-                    <a href="https://vk.com/" target="_blank" class="modal-thanks__link">Vkontakte</a>
-                </li>
-            </ul>
+        <div class="modal-thanks__content">
+            <button class="modal-thanks__close"></button>
+            <div class="modal-thanks__title title">Спасибо!</div>
+            <p class="modal-thanks__text">Наши менеджеры свяжутся с вами.</p>
+            <div class="modal-thanks__social">
+                <p>Подписывайтесь на наши соцсети</p>
+                <ul class="modal-thanks__list">
+                    <li class="modal-thanks__item">
+                        <a href="https://www.instagram.com/"  target="_blank"class="modal-thanks__link">Instagram</a>
+                    </li>
+                    <li class="modal-thanks__item">
+                        <a href="https://www.avito.ru/rossiya" target="_blank" class="modal-thanks__link">Avito</a>
+                    </li>
+                    <li class="modal-thanks__item">
+                        <a href="https://youla.ru/" target="_blank" class="modal-thanks__link">Youla</a>
+                    </li>
+                    <li class="modal-thanks__item">
+                        <a href="https://vk.com/" target="_blank" class="modal-thanks__link">Vkontakte</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 

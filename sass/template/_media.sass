@@ -69,6 +69,14 @@
             &__list
                 margin: -0.6rem 4rem 3rem 0rem             
 @media screen and ( max-width: 1560px )
+    .tabs
+        &-content
+            &__item 
+                .swiper
+                    &-button
+                        &-next,
+                        &-prev
+                            top: 20%
     .hero
         padding: 3rem 0
         &-side
@@ -140,6 +148,9 @@
             &__right
                 margin: 6.5rem 0rem 0rem 5rem
 @media screen and ( max-width: 1480px )
+    .modal
+        &__title
+            max-width: 400px
     .container
         max-width: 1280px 
     .title
@@ -261,6 +272,15 @@
             &:nth-child(4)
                 margin: -0.2rem -0.2rem 0rem 0rem
 @media screen and ( max-width: 1280px )
+    .modal
+        &-form
+            &__button
+                &::after
+                    width: 100% !important
+        .policy
+            &__label 
+                span
+                    top: 0
     .products .container,
     .container
         max-width: 1050px
@@ -327,7 +347,6 @@
     main
         padding-top: 74px
     .hero
-        padding: 2.2rem 0 1rem
         &-side
             &__over
                 font-size: 0.9rem
@@ -414,12 +433,14 @@
                     &-button
                         &-prev,
                         &-next
-                            top: 15%
+                            top: 22%
                         &-prev
                             left: -36px
                         &-next
                             right: -36px
     .card
+        &__size
+            margin: 0
         &__title
             font-size: 1.3rem
             margin: 1.0rem 0 0.2rem
@@ -444,7 +465,9 @@
             &__wrap
                 margin-top: 0.2rem
                 &::before
+                    top: 12px
                     width: 2px
+                    height: 63px
             &__item
                 margin-bottom: 1.2rem
             &__text
@@ -487,6 +510,10 @@
                 margin-bottom: 1rem
                 strong
                     margin-bottom: 0.2rem
+                    line-height: 24px
+                    max-width: 180px
+                span
+                    line-height: 20px
             &__list
                 max-width: 220px
             &__line
@@ -537,11 +564,12 @@
                 margin-bottom: 1rem
         &-form
             &__size
-                max-width: 286px
+                max-width: 315px
             &__input
                 font-size: 0.90rem
                 padding-bottom: 0
             &__field
+                max-width: 286px
                 margin-bottom: 1rem
             &__button
                 max-width: 278px
@@ -622,10 +650,13 @@
     .modal,
     .modal-thanks
         max-width: 650px
-        padding: 2.5rem 0
         &__close
             top: 20px
             right: 20px
+    .modal
+        height: 650px
+        &__content
+            padding: 2.5rem 0
     .tabs
         &-content
             &__item 
@@ -668,6 +699,9 @@
                             &__text
                                 max-width: 190px
 @media screen and ( max-width: 991px )
+    .modal
+        &__title
+            max-width: 300px
     .card
         &__image
             max-width: 13.06rem
@@ -701,6 +735,14 @@
     .title
         font-size: 36px
         line-height: 46px
+    .tabs
+        &-content
+            &__item 
+                .swiper
+                    &-button
+                        &-next,
+                        &-prev
+                            top: 18%
 @media screen and ( max-width: 962px )
     .stages
         &::after
@@ -781,7 +823,8 @@
                 font-size: 0.85rem
             &__button
                 margin: 1.7rem 0 2.8rem 0.0rem
-                max-width: 143px
+                max-width: 145px
+                width: 100%
             &__center 
                 .gallery-top
                     margin-top: -15px
@@ -840,6 +883,9 @@
                             right: -35px
                         &-prev
                             left: -35px
+                        &-next,
+                        &-prev
+                            top: 20%
     .card
         &__title
             margin: 0.7rem 0 0
@@ -985,11 +1031,9 @@
 @media screen and ( max-width: 800px )
     .gift
         &-side
-            &__left
-                display: none
             &__right
                 right: 0
-                margin: 1.0rem 0rem 0rem 0rem
+                margin: 1.0rem -5rem 0 4rem
 @media screen and ( max-width: 767px )
     .tabs
         &-content
@@ -1021,9 +1065,18 @@
             span
                 top: auto
 @media screen and ( max-width: 690px )
+    .gift
+        &-side
+            &__left
+                display: none
+            &__right
+                margin: 0
     .modal
         &-thanks
             max-width: 400px
+            height: 300px
+            &__content
+                padding: 4rem 0 5.0rem
             &__social 
                 p
                     font-size: 1.0rem
@@ -1035,12 +1088,13 @@
                 margin-right: 15px
             &__list
                 margin: 5px 0 0
-        &-thanks > p
-            margin: 0 0 25px
-            font-size: 1.0rem
-            line-height: 2.00rem
+            &__text
+                margin: 0 0 25px
+                font-size: 1.0rem
+                line-height: 2.00rem
     .modal
         max-width: 400px
+        height: 520px
         &__title
             max-width: 300px
             line-height: 38px
@@ -1116,11 +1170,12 @@
         &-button
             transform: translateX(-140%)
     .footer
+        padding: 5rem 0 7rem
         &-column
             &__social
                 &-list
                     position: absolute
-                    bottom: -34px
+                    bottom: -45px
                     left: 0
                     flex-direction: row
                     justify-content: center
@@ -1133,7 +1188,7 @@
                     &:last-child
                         margin: 0
             &__copy
-                bottom: -60px
+                bottom: -75px
             &__policy
                 margin-top: 7.3rem
 @media screen and ( max-width: 530px )
@@ -1176,6 +1231,10 @@
             &__item
                 max-width: 150px
 @media screen and ( max-width: 425px )
+    .contactes
+        &-form
+            &__field
+                max-width: none
     .custom-logo-link
         &.pos
             position: absolute
@@ -1225,10 +1284,11 @@
     .modal-thanks
         &__item
             margin-right: 10px
-    .modal,
-    .modal-thanks
+    .modal
         max-width: 320px
-        padding: 2.0rem 0 1.4rem
+        height: 465px
+        &__content
+            padding: 2.0rem 0 1.4rem
         &__close
             width: 17px
             height: 17px
@@ -1260,6 +1320,18 @@
                         right: 0
                     &-prev
                         left: 0
+@media screen and (max-width: 395px )
+    .hero
+        &-side
+            &__button
+                max-width: 148px
+    .card
+        &__button
+            max-width: 142px
+    .footer
+        &-column
+            &__copy
+                font-size: 0.75rem
 @media screen and ( max-width: 387px )
     .footer
         &-column
@@ -1410,6 +1482,8 @@
                     line-height: 14px
                 p
                     line-height: 18px
+            &__policy
+                margin-top: 14rem
 @media screen and ( max-width: 365px )
     .footer
         &-column
@@ -1424,17 +1498,13 @@
             &__link
                 font-size: 0.8rem
 @media screen and ( max-width: 340px )
+    .contactes
+        .policy
+            &__label 
+                span
+                    right: -15px
     .installment
         &-side
             &__title
                 font-size: 32px
                 line-height: 42px
-
-@media screen and ( max-height: 530px )
-    .modal
-        overflow-x: scroll
-        max-height: 530px
-@media screen and ( max-height: 320px )
-    .modal
-        overflow-x: scroll
-        max-height: 320px

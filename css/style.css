@@ -2861,7 +2861,7 @@ body.compensate-for-scrollbar {
 
 .hero-side__social {
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: -4.7rem;
   list-style: none;
   -webkit-transform: rotate(90deg) translateX(-50%);
@@ -3294,7 +3294,6 @@ body.compensate-for-scrollbar {
   line-height: 2.25rem;
   color: #E41715;
   font-weight: bold;
-  letter-spacing: 0.8px;
   margin-bottom: 1.2rem;
   display: block;
 }
@@ -3328,7 +3327,6 @@ body.compensate-for-scrollbar {
 .installment-side__item strong {
   font-size: 1.5rem;
   line-height: 2.25rem;
-  letter-spacing: 0.8px;
   color: #13110C;
   display: block;
   margin-bottom: 0.5rem;
@@ -3338,7 +3336,6 @@ body.compensate-for-scrollbar {
   font-size: 1.2rem;
   line-height: 1.625rem;
   color: #13110C;
-  letter-spacing: -0.2px;
 }
 
 .installment-side__right {
@@ -3865,9 +3862,17 @@ body.compensate-for-scrollbar {
           transform: translate(-50%, -50%);
   max-width: 1056px;
   width: 100%;
-  padding: 5.7rem 0;
+  height: 760px;
+  max-height: 100%;
   background-color: #ffffff;
   z-index: 60;
+}
+
+.modal__content {
+  padding: 5.7rem 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .modal__close {
@@ -3935,9 +3940,17 @@ body.compensate-for-scrollbar {
           transform: translate(-50%, -50%);
   max-width: 1056px;
   width: 100%;
-  padding: 5.7rem 0;
   background-color: #ffffff;
   z-index: 60;
+  height: 457px;
+  max-height: 100%;
+}
+
+.modal-thanks__content {
+  padding: 5.7rem 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .modal-thanks__close {
@@ -3955,7 +3968,7 @@ body.compensate-for-scrollbar {
   margin: 0 0 26px;
 }
 
-.modal-thanks > p {
+.modal-thanks__text {
   text-align: center;
   margin: 0 0 68px;
   font-size: 1.5rem;
@@ -4082,6 +4095,9 @@ body.compensate-for-scrollbar {
 }
 
 @media screen and (max-width: 1560px) {
+  .tabs-content__item .swiper-button-next, .tabs-content__item .swiper-button-prev {
+    top: 20%;
+  }
   .hero {
     padding: 3rem 0;
   }
@@ -4162,6 +4178,9 @@ body.compensate-for-scrollbar {
 }
 
 @media screen and (max-width: 1480px) {
+  .modal__title {
+    max-width: 400px;
+  }
   .container {
     max-width: 1280px;
   }
@@ -4306,6 +4325,12 @@ body.compensate-for-scrollbar {
 }
 
 @media screen and (max-width: 1280px) {
+  .modal-form__button::after {
+    width: 100% !important;
+  }
+  .modal .policy__label span {
+    top: 0;
+  }
   .products .container,
   .container {
     max-width: 1050px;
@@ -4385,9 +4410,6 @@ body.compensate-for-scrollbar {
   }
   main {
     padding-top: 74px;
-  }
-  .hero {
-    padding: 2.2rem 0 1rem;
   }
   .hero-side__over {
     font-size: 0.9rem;
@@ -4489,13 +4511,16 @@ body.compensate-for-scrollbar {
     padding: 0 0 30px;
   }
   .tabs-content__item .swiper-button-prev, .tabs-content__item .swiper-button-next {
-    top: 15%;
+    top: 22%;
   }
   .tabs-content__item .swiper-button-prev {
     left: -36px;
   }
   .tabs-content__item .swiper-button-next {
     right: -36px;
+  }
+  .card__size {
+    margin: 0;
   }
   .card__title {
     font-size: 1.3rem;
@@ -4528,7 +4553,9 @@ body.compensate-for-scrollbar {
     margin-top: 0.2rem;
   }
   .stages-block__wrap::before {
+    top: 12px;
     width: 2px;
+    height: 63px;
   }
   .stages-block__item {
     margin-bottom: 1.2rem;
@@ -4582,6 +4609,11 @@ body.compensate-for-scrollbar {
   }
   .installment-side__item strong {
     margin-bottom: 0.2rem;
+    line-height: 24px;
+    max-width: 180px;
+  }
+  .installment-side__item span {
+    line-height: 20px;
   }
   .installment-side__list {
     max-width: 220px;
@@ -4643,13 +4675,14 @@ body.compensate-for-scrollbar {
     margin-bottom: 1rem;
   }
   .contactes-form__size {
-    max-width: 286px;
+    max-width: 315px;
   }
   .contactes-form__input {
     font-size: 0.90rem;
     padding-bottom: 0;
   }
   .contactes-form__field {
+    max-width: 286px;
     margin-bottom: 1rem;
   }
   .contactes-form__button {
@@ -4752,12 +4785,17 @@ body.compensate-for-scrollbar {
   .modal,
   .modal-thanks {
     max-width: 650px;
-    padding: 2.5rem 0;
   }
   .modal__close,
   .modal-thanks__close {
     top: 20px;
     right: 20px;
+  }
+  .modal {
+    height: 650px;
+  }
+  .modal__content {
+    padding: 2.5rem 0;
   }
   .tabs-content__item .swiper-button-next {
     right: -15px;
@@ -4806,6 +4844,9 @@ body.compensate-for-scrollbar {
 }
 
 @media screen and (max-width: 991px) {
+  .modal__title {
+    max-width: 300px;
+  }
   .card__image {
     max-width: 13.06rem;
     height: 10.43rem;
@@ -4850,6 +4891,9 @@ body.compensate-for-scrollbar {
   .title {
     font-size: 36px;
     line-height: 46px;
+  }
+  .tabs-content__item .swiper-button-next, .tabs-content__item .swiper-button-prev {
+    top: 18%;
   }
 }
 
@@ -4953,7 +4997,8 @@ body.compensate-for-scrollbar {
   }
   .hero-side__button {
     margin: 1.7rem 0 2.8rem 0.0rem;
-    max-width: 143px;
+    max-width: 145px;
+    width: 100%;
   }
   .hero-side__center .gallery-top {
     margin-top: -15px;
@@ -5021,6 +5066,9 @@ body.compensate-for-scrollbar {
   }
   .tabs-content__item .swiper-button-prev {
     left: -35px;
+  }
+  .tabs-content__item .swiper-button-next, .tabs-content__item .swiper-button-prev {
+    top: 20%;
   }
   .card__title {
     margin: 0.7rem 0 0;
@@ -5191,12 +5239,9 @@ body.compensate-for-scrollbar {
 }
 
 @media screen and (max-width: 800px) {
-  .gift-side__left {
-    display: none;
-  }
   .gift-side__right {
     right: 0;
-    margin: 1.0rem 0rem 0rem 0rem;
+    margin: 1.0rem -5rem 0 4rem;
   }
 }
 
@@ -5234,8 +5279,18 @@ body.compensate-for-scrollbar {
 }
 
 @media screen and (max-width: 690px) {
+  .gift-side__left {
+    display: none;
+  }
+  .gift-side__right {
+    margin: 0;
+  }
   .modal-thanks {
     max-width: 400px;
+    height: 300px;
+  }
+  .modal-thanks__content {
+    padding: 4rem 0 5.0rem;
   }
   .modal-thanks__social p {
     font-size: 1.0rem;
@@ -5251,13 +5306,14 @@ body.compensate-for-scrollbar {
   .modal-thanks__list {
     margin: 5px 0 0;
   }
-  .modal-thanks > p {
+  .modal-thanks__text {
     margin: 0 0 25px;
     font-size: 1.0rem;
     line-height: 2.00rem;
   }
   .modal {
     max-width: 400px;
+    height: 520px;
   }
   .modal__title {
     max-width: 300px;
@@ -5357,9 +5413,12 @@ body.compensate-for-scrollbar {
         -ms-transform: translateX(-140%);
             transform: translateX(-140%);
   }
+  .footer {
+    padding: 5rem 0 7rem;
+  }
   .footer-column__social-list {
     position: absolute;
-    bottom: -34px;
+    bottom: -45px;
     left: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -5381,7 +5440,7 @@ body.compensate-for-scrollbar {
     margin: 0;
   }
   .footer-column__copy {
-    bottom: -60px;
+    bottom: -75px;
   }
   .footer-column__policy {
     margin-top: 7.3rem;
@@ -5438,6 +5497,9 @@ body.compensate-for-scrollbar {
 }
 
 @media screen and (max-width: 425px) {
+  .contactes-form__field {
+    max-width: none;
+  }
   .custom-logo-link.pos {
     position: absolute;
     top: 20px;
@@ -5502,36 +5564,32 @@ body.compensate-for-scrollbar {
   .modal-thanks__item {
     margin-right: 10px;
   }
-  .modal,
-  .modal-thanks {
+  .modal {
     max-width: 320px;
+    height: 465px;
+  }
+  .modal__content {
     padding: 2.0rem 0 1.4rem;
   }
-  .modal__close,
-  .modal-thanks__close {
+  .modal__close {
     width: 17px;
     height: 17px;
     top: 16px;
     right: 16px;
   }
-  .modal__title,
-  .modal-thanks__title {
+  .modal__title {
     margin: 0 auto 15px;
   }
-  .modal-form__size,
-  .modal-thanks-form__size {
+  .modal-form__size {
     max-width: 270px;
   }
-  .modal-form__input,
-  .modal-thanks-form__input {
+  .modal-form__input {
     line-height: 1.3rem;
   }
-  .modal .policy__label,
-  .modal-thanks .policy__label {
+  .modal .policy__label {
     line-height: 13px;
   }
-  .modal .policy__label span,
-  .modal-thanks .policy__label span {
+  .modal .policy__label span {
     right: -15px;
   }
   .reviews-button {
@@ -5549,6 +5607,18 @@ body.compensate-for-scrollbar {
   }
   .reviews-button .swiper-button-prev {
     left: 0;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .hero-side__button {
+    max-width: 148px;
+  }
+  .card__button {
+    max-width: 142px;
+  }
+  .footer-column__copy {
+    font-size: 0.75rem;
   }
 }
 
@@ -5737,6 +5807,9 @@ body.compensate-for-scrollbar {
   .footer-column__email p {
     line-height: 18px;
   }
+  .footer-column__policy {
+    margin-top: 14rem;
+  }
 }
 
 @media screen and (max-width: 365px) {
@@ -5755,23 +5828,12 @@ body.compensate-for-scrollbar {
 }
 
 @media screen and (max-width: 340px) {
+  .contactes .policy__label span {
+    right: -15px;
+  }
   .installment-side__title {
     font-size: 32px;
     line-height: 42px;
-  }
-}
-
-@media screen and (max-height: 530px) {
-  .modal {
-    overflow-x: scroll;
-    max-height: 530px;
-  }
-}
-
-@media screen and (max-height: 320px) {
-  .modal {
-    overflow-x: scroll;
-    max-height: 320px;
   }
 }
 /*# sourceMappingURL=style.css.map */

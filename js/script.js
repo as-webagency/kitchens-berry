@@ -72,19 +72,19 @@ $(document).ready(function(){
     $('.burger').click(function() {
         $('.nav-list').fadeIn();
         $('.close').fadeIn();
-        $('.custom-logo-link').addClass('pos');
+        $('.menu__side .custom-logo-link').addClass('pos');
     }); 
     
     $('.menu__close').click(function() {
         $('.nav-list').fadeOut();
         $('.close').fadeOut();
-        $('.custom-logo-link').removeClass('pos');
+        $('.menu__side .custom-logo-link').removeClass('pos');
     });
 
     $('.nav-list__link').click(function() {
         $('.nav-list').fadeOut();
         $('.close').fadeOut();
-        $('.custom-logo-link').removeClass('pos');
+        $('.menu__side .custom-logo-link').removeClass('pos');
     });
 
     // Change Height Scroll
