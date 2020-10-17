@@ -216,7 +216,7 @@ $(document).ready(function(){
     $('[type=tel]').mask('+7(000) 00-00-000', { placeholder: "Ваш телефон" } );
 
     // Modals
-    $('.contacts__call, .hero-side__button, .gift-side__button').click(function(){
+    $('.contacts__call, .card__button, .hero-side__button, .gift-side__button').click(function(){
         $('.overlay, .modal').fadeIn();
     });
 

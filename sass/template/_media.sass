@@ -273,6 +273,11 @@
                 margin: -0.2rem -0.2rem 0rem 0rem
 @media screen and ( max-width: 1280px )
     .modal
+        &-thanks
+            &__close
+                background-size: contain
+        &__close
+            background-size: contain
         &-form
             &__button
                 &::after
@@ -320,6 +325,7 @@
         top: 30px
         right: 34px
         z-index: 20
+        background-size: contain
     .menu
         &__contacts
             max-width: 38rem
@@ -416,7 +422,7 @@
         &__link
             font-size: 0.9rem
     .products
-        padding: 2.7rem 0
+        padding: 4rem 0 2.7rem
         &__title
             margin-left: 0
     .tabs
@@ -863,7 +869,7 @@
             height: 42px
         &::after
             width: 100%
-            bottom: -0.20rem
+            bottom: -0.25rem
     .social
         &__item
             margin-right: 20px
@@ -1102,7 +1108,7 @@
             text-align: center
             line-height: 1.4rem
             font-size: 1rem
-            max-width: 270px
+            max-width: 240px
         &-form
             &__size
                 max-width: 280px
@@ -1116,7 +1122,7 @@
             &__policy
                 margin: 0
                 span
-                    max-width: 240px
+                    max-width: 180px
     .reviews-button
         transform: translateX(-160%)
     .hero
@@ -1231,10 +1237,69 @@
             &__item
                 max-width: 150px
 @media screen and ( max-width: 425px )
+    .reviews
+        padding: 2.8rem 0 0
+        &-button
+            max-width: 60px
+            height: 30px
+            transform: translateX(-200%)
+            .swiper
+                &-button
+                    &-next, 
+                    &-prev
+                        bottom: 0
+                    &-next
+                        right: 0
+                    &-prev
+                        left: 0
+    .stages
+        padding: 0 0 2rem
+        &-block
+            &__item
+                &:nth-child(1)
+                    .stages
+                        &-block
+                            &__text
+                                max-width: 130px
+                &:nth-child(2)
+                    .stages
+                        &-block
+                            &__text
+                                br
+                                    display: none
+                &:nth-child(3)
+                    .stages
+                        &-block
+                            &__text
+                                max-width: 140px
+                                br
+                                    display: none
+                &:nth-child(5)
+                    .stages
+                        &-block
+                            &__text
+                                max-width: 110px
+                                br
+                                    display: none
+                &:nth-child(6)
+                    .stages
+                        &-block
+                            &__text
+            &__wrap
+                &::before
+                    height: 81px
     .contactes
+        padding: 3.5rem 0 0
         &-form
             &__field
                 max-width: none
+            &__button
+                max-width: none
+                width: 100%
+        .policy
+            &__label 
+                span
+                    max-width: 340px
     .custom-logo-link
         &.pos
             position: absolute
@@ -1263,7 +1328,11 @@
         padding-top: 75px
     .hero
         padding: 1.0rem 0 2rem
+        &-side
+            &__title
+                max-width: 19rem
     .installment
+        padding: 2rem 0 0
         .container
             position: relative
         &-side
@@ -1275,12 +1344,28 @@
                     margin: 0 0 90px
             &__left
                 justify-content: start
+    .tabs
+        &-triggers
+            &__list
+                display: flex
+                justify-content: end
+        &-content
+            &__item 
+                .swiper
+                    &-button
+                        &-prev
+                            left: 25px
+                        &-next
+                            right: 25px
 @media screen and ( max-width: 412px )
-    .policy
-        &__label 
-            span
-                max-width: 250px
+    .modal
+        .policy
+            &__label 
+                span
+                    max-width: 180px
 @media screen and ( max-width: 400px )
+    .contactes .policy__label span
+        right: -15px
     .modal-thanks
         &__item
             margin-right: 10px
@@ -1306,21 +1391,7 @@
                 line-height: 13px
                 span
                     right: -15px
-    .reviews
-        &-button
-            max-width: 60px
-            height: 30px
-            transform: translateX(-200%)
-            .swiper
-                &-button
-                    &-next, 
-                    &-prev
-                        bottom: 0
-                    &-next
-                        right: 0
-                    &-prev
-                        left: 0
-@media screen and (max-width: 395px )
+@media screen and ( max-width: 395px )
     .hero
         &-side
             &__button
@@ -1337,6 +1408,9 @@
         &-column
             &__copy
                 font-size: 12px
+@media screen and ( max-width: 383px )
+    .contactes .policy__label span
+        max-width: 280px
 @media screen and ( max-width: 380px )
     .reviews
         &-button
@@ -1434,11 +1508,6 @@
                 max-width: 270px
             &::before
                 margin-left: 0
-    .modal
-        .policy
-            &__label
-                span
-                    max-width: 250px
     #map
         height: 340px
 
@@ -1458,6 +1527,10 @@
         &-block
             &__item
                 max-width: none
+                .stages
+                    &-block
+                        &__text
+                            max-width: none !important
     .footer
         &-column
             &:nth-child(4)
@@ -1490,6 +1563,15 @@
             &__copy
                 font-size: 10px
 @media screen and ( max-width: 345px )
+    .tabs
+        &-content
+            &__item 
+                .swiper
+                    &-button
+                        &-prev
+                            left: 0
+                        &-next
+                            right: 0
     .footer
         &-column
             &__social
@@ -1508,3 +1590,6 @@
             &__title
                 font-size: 32px
                 line-height: 42px
+@media screen and ( max-width: 326px )
+    .contactes .policy__label span
+        max-width: 265px

@@ -3393,7 +3393,6 @@ body.compensate-for-scrollbar {
 .reviews-container .swiper-slide__box p {
   font-size: 1.12rem;
   line-height: 1.625rem;
-  letter-spacing: 0.5px;
   max-width: 520px;
   margin-bottom: 25px;
 }
@@ -3482,7 +3481,6 @@ body.compensate-for-scrollbar {
   color: #E41715;
   font-size: 1.5rem;
   line-height: 2.25rem;
-  letter-spacing: 0.8px;
   display: inline-block;
   margin-bottom: 1.2rem;
 }
@@ -3914,6 +3912,7 @@ body.compensate-for-scrollbar {
   line-height: 1.625rem;
   border-bottom: 1px solid #13110C;
   padding-bottom: 6px;
+  border-radius: 0;
 }
 
 .modal-form__button {
@@ -4325,6 +4324,12 @@ body.compensate-for-scrollbar {
 }
 
 @media screen and (max-width: 1280px) {
+  .modal-thanks__close {
+    background-size: contain;
+  }
+  .modal__close {
+    background-size: contain;
+  }
   .modal-form__button::after {
     width: 100% !important;
   }
@@ -4377,6 +4382,7 @@ body.compensate-for-scrollbar {
     top: 30px;
     right: 34px;
     z-index: 20;
+    background-size: contain;
   }
   .menu__contacts {
     max-width: 38rem;
@@ -4496,7 +4502,7 @@ body.compensate-for-scrollbar {
     font-size: 0.9rem;
   }
   .products {
-    padding: 2.7rem 0;
+    padding: 4rem 0 2.7rem;
   }
   .products__title {
     margin-left: 0;
@@ -5047,7 +5053,7 @@ body.compensate-for-scrollbar {
   }
   .button::after {
     width: 100%;
-    bottom: -0.20rem;
+    bottom: -0.25rem;
   }
   .social__item {
     margin-right: 20px;
@@ -5323,7 +5329,7 @@ body.compensate-for-scrollbar {
     text-align: center;
     line-height: 1.4rem;
     font-size: 1rem;
-    max-width: 270px;
+    max-width: 240px;
   }
   .modal-form__size {
     max-width: 280px;
@@ -5342,7 +5348,7 @@ body.compensate-for-scrollbar {
     margin: 0;
   }
   .modal-form__policy span {
-    max-width: 240px;
+    max-width: 180px;
   }
   .reviews-button {
     -webkit-transform: translateX(-160%);
@@ -5497,8 +5503,61 @@ body.compensate-for-scrollbar {
 }
 
 @media screen and (max-width: 425px) {
+  .reviews {
+    padding: 2.8rem 0 0;
+  }
+  .reviews-button {
+    max-width: 60px;
+    height: 30px;
+    -webkit-transform: translateX(-200%);
+        -ms-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  .reviews-button .swiper-button-next, .reviews-button .swiper-button-prev {
+    bottom: 0;
+  }
+  .reviews-button .swiper-button-next {
+    right: 0;
+  }
+  .reviews-button .swiper-button-prev {
+    left: 0;
+  }
+  .stages {
+    padding: 0 0 2rem;
+  }
+  .stages-block__item:nth-child(1) .stages-block__text {
+    max-width: 130px;
+  }
+  .stages-block__item:nth-child(2) .stages-block__text br {
+    display: none;
+  }
+  .stages-block__item:nth-child(3) .stages-block__text {
+    max-width: 140px;
+  }
+  .stages-block__item:nth-child(3) .stages-block__text br {
+    display: none;
+  }
+  .stages-block__item:nth-child(5) .stages-block__text {
+    max-width: 110px;
+  }
+  .stages-block__item:nth-child(5) .stages-block__text br {
+    display: none;
+  }
+  .stages-block__wrap::before {
+    height: 81px;
+  }
+  .contactes {
+    padding: 3.5rem 0 0;
+  }
   .contactes-form__field {
     max-width: none;
+  }
+  .contactes-form__button {
+    max-width: none;
+    width: 100%;
+  }
+  .contactes .policy__label span {
+    max-width: 340px;
   }
   .custom-logo-link.pos {
     position: absolute;
@@ -5537,6 +5596,12 @@ body.compensate-for-scrollbar {
   .hero {
     padding: 1.0rem 0 2rem;
   }
+  .hero-side__title {
+    max-width: 19rem;
+  }
+  .installment {
+    padding: 2rem 0 0;
+  }
   .installment .container {
     position: relative;
   }
@@ -5552,15 +5617,32 @@ body.compensate-for-scrollbar {
         -ms-flex-pack: start;
             justify-content: start;
   }
+  .tabs-triggers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .tabs-content__item .swiper-button-prev {
+    left: 25px;
+  }
+  .tabs-content__item .swiper-button-next {
+    right: 25px;
+  }
 }
 
 @media screen and (max-width: 412px) {
-  .policy__label span {
-    max-width: 250px;
+  .modal .policy__label span {
+    max-width: 180px;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .contactes .policy__label span {
+    right: -15px;
+  }
   .modal-thanks__item {
     margin-right: 10px;
   }
@@ -5592,22 +5674,6 @@ body.compensate-for-scrollbar {
   .modal .policy__label span {
     right: -15px;
   }
-  .reviews-button {
-    max-width: 60px;
-    height: 30px;
-    -webkit-transform: translateX(-200%);
-        -ms-transform: translateX(-200%);
-            transform: translateX(-200%);
-  }
-  .reviews-button .swiper-button-next, .reviews-button .swiper-button-prev {
-    bottom: 0;
-  }
-  .reviews-button .swiper-button-next {
-    right: 0;
-  }
-  .reviews-button .swiper-button-prev {
-    left: 0;
-  }
 }
 
 @media screen and (max-width: 395px) {
@@ -5625,6 +5691,12 @@ body.compensate-for-scrollbar {
 @media screen and (max-width: 387px) {
   .footer-column__copy {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .contactes .policy__label span {
+    max-width: 280px;
   }
 }
 
@@ -5750,9 +5822,6 @@ body.compensate-for-scrollbar {
   .policy__label::before {
     margin-left: 0;
   }
-  .modal .policy__label span {
-    max-width: 250px;
-  }
   #map {
     height: 340px;
   }
@@ -5779,6 +5848,9 @@ body.compensate-for-scrollbar {
   }
   .stages-block__item {
     max-width: none;
+  }
+  .stages-block__item .stages-block__text {
+    max-width: none !important;
   }
   .footer-column:nth-child(4) {
     max-width: 180px;
@@ -5819,6 +5891,12 @@ body.compensate-for-scrollbar {
 }
 
 @media screen and (max-width: 345px) {
+  .tabs-content__item .swiper-button-prev {
+    left: 0;
+  }
+  .tabs-content__item .swiper-button-next {
+    right: 0;
+  }
   .footer-column__social-link {
     font-size: 0.75rem;
   }
@@ -5834,6 +5912,12 @@ body.compensate-for-scrollbar {
   .installment-side__title {
     font-size: 32px;
     line-height: 42px;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  .contactes .policy__label span {
+    max-width: 265px;
   }
 }
 /*# sourceMappingURL=style.css.map */
