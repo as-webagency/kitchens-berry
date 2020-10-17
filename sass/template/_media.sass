@@ -1237,6 +1237,8 @@
             &__item
                 max-width: 150px
 @media screen and ( max-width: 425px )
+    .products
+        padding: 2.2rem 0
     .reviews
         padding: 2.8rem 0 0
         &-button
@@ -1247,13 +1249,19 @@
                 &-button
                     &-next, 
                     &-prev
-                        bottom: 0
+                        bottom: 5px
                     &-next
                         right: 0
+                        &::after
+                            content: url('../img/reviews/arrow_next_2.svg')
                     &-prev
                         left: 0
+                        &::after
+                            content: url('../img/reviews/arrow_prev_2.svg')
+        &-container
+            padding-bottom: 50px
     .stages
-        padding: 0 0 2rem
+        padding: 0 0 1.5rem
         &-block
             &__item
                 &:nth-child(1)
@@ -1354,9 +1362,9 @@
                 .swiper
                     &-button
                         &-prev
-                            left: 25px
+                            left: 45px
                         &-next
-                            right: 25px
+                            right: 45px
 @media screen and ( max-width: 412px )
     .modal
         .policy
@@ -1404,6 +1412,15 @@
             &__copy
                 font-size: 0.75rem
 @media screen and ( max-width: 387px )
+    .tabs
+        &-content
+            &__item 
+                .swiper
+                    &-button
+                        &-prev
+                            left: 25px
+                        &-next
+                            right: 25px
     .footer
         &-column
             &__copy
@@ -1569,9 +1586,9 @@
                 .swiper
                     &-button
                         &-prev
-                            left: 0
+                            left: 10px
                         &-next
-                            right: 0
+                            right: 10px
     .footer
         &-column
             &__social
